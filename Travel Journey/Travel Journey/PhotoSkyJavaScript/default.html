@@ -1,0 +1,32 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>PhotoSkyJavaScript</title>
+
+    <!-- WinJS references -->
+    <link href="//Microsoft.WinJS.1.0/css/ui-dark.css" rel="stylesheet" />
+    <script src="//Microsoft.WinJS.1.0/js/base.js"></script>
+    <script src="//Microsoft.WinJS.1.0/js/ui.js"></script>
+    <script type="text/javascript" src="/LiveSDKHTML/js/wl.js"></script>
+
+    <!-- PhotoSkyJavaScript references -->
+    <link href="/css/default.css" rel="stylesheet" />
+    <script src="/js/data.js"></script>
+    <script src="/js/extendedSplash.js"></script>
+    <script src="/js/navigator.js"></script>
+    <script src="/js/default.js"></script>
+</head>
+<body>
+    <div id="extendedSplashScreen" class="extendedSplashScreen hidden">
+        <img id="extendedSplashImage" src="../images/splashscreen.png" alt="Splash screen image" />
+<!--        <div id="extendedSplashDescription">
+            <span id="extendedSplashText"></span>
+        </div>-->
+        <progress id="extendedSplashProgress" style="color:white;" class="win-medium win-ring"></progress>
+    </div>
+    <progress id="titleProcess" style="color:white; width:500px; position: absolute; left: 20px; top: 10px;"></progress>
+    <img id="InternetConnectionImage" src="../images/connectError.png" style="position: absolute; right: 30px; top: 0px; visibility:hidden" />
+    <div id="contenthost" data-win-control="Application.PageControlNavigator" data-win-options="{home: '/pages/groupedItems/groupedItems.html'}"></div>
+</body>
+</html>

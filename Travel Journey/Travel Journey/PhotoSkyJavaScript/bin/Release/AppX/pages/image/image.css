@@ -1,0 +1,18 @@
+﻿.image {
+    margin-top:130px;
+    margin-left:130px;
+}
+
+
+@media screen and (-ms-view-state: snapped) {
+    .image {
+        margin-top: 130px;
+        margin-left: 20px;
+    }
+}
+
+@media screen and (-ms-view-state: fullscreen-portrait) {
+    .itemdetailpage .content article {
+        margin-left: 100px;
+    }
+}

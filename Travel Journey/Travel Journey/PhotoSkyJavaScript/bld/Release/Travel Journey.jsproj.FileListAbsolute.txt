@@ -1,0 +1,9 @@
+C:\Users\v-xisguo\Desktop\Travel Journey\Travel Journey\Travel Journey\PhotoSkyJavaScript\bin\Release\resources.pri
+C:\Users\v-xisguo\Desktop\Travel Journey\Travel Journey\Travel Journey\PhotoSkyJavaScript\bin\Release\AppxManifest.xml
+C:\Users\v-xisguo\Desktop\Travel Journey\Travel Journey\Travel Journey\PhotoSkyJavaScript\bin\Release\Travel Journey.build.appxrecipe
+C:\Users\v-xisguo\Desktop\Travel Journey\Travel Journey\Travel Journey\PhotoSkyJavaScript\bld\Release\priconfig.xml
+C:\Users\v-xisguo\Desktop\Travel Journey\Travel Journey\Travel Journey\PhotoSkyJavaScript\bld\Release\layout.resfiles
+C:\Users\v-xisguo\Desktop\Travel Journey\Travel Journey\Travel Journey\PhotoSkyJavaScript\bld\Release\resources.resfiles
+C:\Users\v-xisguo\Desktop\Travel Journey\Travel Journey\Travel Journey\PhotoSkyJavaScript\bld\Release\pri.resfiles
+C:\Users\v-xisguo\Desktop\Travel Journey\Travel Journey\Travel Journey\PhotoSkyJavaScript\bld\Release\LanguageQualifiers.txt
+C:\Users\v-xisguo\Desktop\Travel Journey\Travel Journey\Travel Journey\PhotoSkyJavaScript\bld\Release\ProjectArchitectures.txt

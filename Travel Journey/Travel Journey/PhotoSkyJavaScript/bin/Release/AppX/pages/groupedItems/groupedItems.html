@@ -1,0 +1,62 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>groupedItemsPage</title>
+
+    <link href="//Microsoft.WinJS.1.0/css/ui-dark.css" rel="stylesheet" />
+    <script src="//Microsoft.WinJS.1.0/js/base.js"></script>
+    <script src="//Microsoft.WinJS.1.0/js/ui.js"></script>
+    
+    <link href="/css/default.css" rel="stylesheet" />
+    <link href="/pages/groupedItems/groupedItems.css" rel="stylesheet" />
+    <script src="/js/data.js"></script>
+    <script src="/pages/groupedItems/groupedItems.js"></script>
+</head>
+<body>
+    <!-- Template for the group headers in the zoomed in ListView -->
+    <div class="zoomedInheaderTemplate" data-win-control="WinJS.Binding.Template">
+        <button class="group-header win-type-x-large win-type-interactive" data-win-bind="groupKey: key"
+            onclick="WinJS.Navigation.navigate('/pages/groupDetail/groupDetail.html', { groupKey: event.srcElement.groupKey })" role="link" tabindex="-1" type="button">
+            <span class="group-title win-type-ellipsis" data-win-bind="textContent: title"></span>
+            <span class="group-chevron"></span>
+        </button>
+    </div>
+
+    <!-- Template for the items in the zoomed in ListView -->
+<!--    <div class="zoomedInitemtemplate" data-win-control="WinJS.Binding.Template">
+        <img class="zoomedInitem-image" src="#" data-win-bind="src: backgroundImage; alt: title"/>
+        <div class="zoomedInitem-overlay">
+            <h4 class="zoomedInitem-title win-type-ellipsis" data-win-bind="textContent: title"></h4>
+        </div>
+    </div>-->
+
+    <!-- Template for the items in the zoomed out ListView -->
+    <div class="zoomedOutitemtemplate" data-win-control="WinJS.Binding.Template">
+        <div class="zoomedOutitem-overlay">
+            <h4 class="zoomedOutitem-title" data-win-bind="textContent: title"></h4>
+        </div>
+    </div>
+    <!-- The content that will be loaded and displayed. -->
+    <div class="fragment homepage">
+        <button id="button" style="position: absolute; left: 20px; top: 30px;">登出</button>
+        <div class="homepage_background"></div>
+        <header aria-label="Header content" role="banner">
+            <button class="win-backbutton" aria-label="Back" disabled></button>
+            <h1 class="titlearea win-type-ellipsis">
+                <span class="pagetitle"></span>
+            </h1>
+            <img class="applogo" src="../../images/applogo.png"/>
+        </header>
+         <section aria-label="Main content" role="main">
+            <!-- SemanticZoom using two ListViews -->
+            <div class="semanticZoomDiv" data-win-control="WinJS.UI.SemanticZoom">
+                <!-- The zoomed in ListView -->
+                <div class="zoomedInitemslist" aria-label="List of groups" data-win-control="WinJS.UI.ListView" data-win-options="{ selectionMode: 'none', tapBehavior: 'invoke', swipeBehavior: 'none'  }"></div>
+                <!-- The zoomed out ListView -->
+                <div class="zoomedOutitemslist" aria-label="List of groups" data-win-control="WinJS.UI.ListView" data-win-options="{ selectionMode: 'none', tapBehavior: 'invoke', swipeBehavior: 'none'  }"></div>
+            </div>
+        </section>
+    </div>
+</body>
+</html>
